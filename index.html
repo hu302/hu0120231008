@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date对象</title>
+</head>
+<body>
+<script>
+   let birthday = prompt("请输入你的出生日期:")
+function functionName(birthday){
+    let birthdays = new Date(birthday)
+    let today = new Date()
+    let date = Math.floor((today-birthdays)/(1000*60*60*24))
+    return date
+}
+let days= functionName(birthday)
+document.write(`你已经出生${days}天`)
+
+
+
+</script>
+</body>
+</html>
